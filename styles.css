@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e5e5e5;
+    /* padding: 50px; */
+}
+
+/* main {
+    padding: 50px;
+
+} */
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    background: #7979cd;
+    box-shadow: -7px -7px 14px #6262a6,
+    7px 7px 14px #9090f4;
+        color: #ffffff;
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+    
+}
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.header p {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    height:120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 15px 0;
+}
+.input-field {
+    height: 40px;
+    width: 100%;
+    margin-left: 0;
+    justify-self: flex-start;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #222020;
+    border: none;
+    box-shadow: inset 6px 6px 12px #0e0d0d,
+        inset -6px -6px 12px #363333;
+}
+.btn-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+    
+}
+.submit-button,
+.reset-button {
+    width: 50%;
+    height: 40px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    box-shadow: -5px -5px 10px #5e5ea0,
+        5px 5px 10px #9494fa;
+    
+}
+.submit-button {
+    background-color: rgb(27, 130, 46);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.reset-button {
+    background-color: rgb(214, 107, 74);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.inner-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-area: auto;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    gap: 30px;
+    color: #fff;
+    background: #222020;
+    box-shadow: inset 6px 6px 12px #0e0d0d,
+        inset -6px -6px 12px #363333;
+}
+
+.balls {
+    width: auto;
+    min-width: 100px;
+    height: auto;
+    min-height: 100px;
+    border-radius: 50%;
+    padding: 40px;
+    font-size: 50px;
+    text-align: center;
+    box-shadow: 16px 16px 32px #0e0d0d,
+        -16px -16px 32px #363333;
+}
+
+.red {background: #37A4C8;}
+.blue {background: #FFA500;}
+.green {background: #5b0eeb;}
+.yellow {background: #f89898;}
+.orange {background: #35c048;}
+.purple {background: #eb0e96;}
+.pink {background: #0b7c739d;}
+.brown {background: #8790e0;}
+.black {background: #ff0000;}
+
+
+@media screen and (max-width: 475px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        /* padding: 20px; */
+        background: #7979cd;
+        box-shadow: -7px -7px 14px #6262a6,
+        7px 7px 14px #9090f4;
+            color: #ffffff;
+    }
+    .header {
+        text-align: center;
+        margin: 20px 0 0 0;
+        
+    }
+    .header h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .header p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    form {
+        width: 100%;
+        /* height: 60px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    .input-field {
+        height: 40px;
+        width: 100%;
+    }
+    .btn-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+    }
+    .submit-button,
+    .reset-button {
+        width: 75%;
+        height: 40px;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        box-shadow: -5px -5px 10px;
+    }
+    .balls {
+        width: 100px;
+        height: 100px;
+        font-size: 40px;
+        padding: 25px;
+        text-align: center;
+
+    }
+    
+}
